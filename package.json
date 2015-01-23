@@ -1,6 +1,7 @@
 {
   "name": "esri-leaflet-related",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.1",
+  "main": "EsriLeafletRelated.js",
   "description": "A Leaflet plugin that allows users to query related tables.",
   "homepage": "https://github.com/jgravois/esri-leaflet-related",
   "repository": {
@@ -8,8 +9,8 @@
     "url": "git@github.com:jgravois/esri-leaflet-related.git"
   },
   "scripts": {
-    "prepublish": "node -e \"require('grunt').tasks(['prepublish']);\"",
-    "test": "node -e \"require('grunt').tasks(['test']);\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/install.js"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -28,7 +29,7 @@
   "license": "Apache 2.0",
   "readmeFilename": "README.md",
   "dependencies": {
-    "leaflet": "^0.7.0",
-    "esri-leaflet": "1.0.0-rc.5"
+    "leaflet": "Leaflet/Leaflet.git#master",
+    "esri-leaflet": "Esri/esri-leaflet.git#leaflet-1.0"
   }
 }
